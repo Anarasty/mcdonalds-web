@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+img,
+svg,
+span,
+input,
+select,
+button,
+textarea,
+ion-icon {
+  display: block;
+}
+
+img {
+  height: auto;
+}
+
+input,
+select,
+button,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 47%);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+::selection {
+  background-color: hsl(54deg, 100%, 59%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(0deg, 0%, 93%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(54deg, 100%, 59%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FFC72C;
+}
+
+.container {
+  padding-inline: 15px;
+}
+
+.header-btn-group .btn {
+  display: none;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 20px;
+  border-block-end: 1px solid hsla(23deg, 61%, 86%, 0.2);
+  z-index: 4;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.header .container .logo {
+  color: hsl(210deg, 26%, 7%);
+  font-family: "Rubik", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+.header .container .logo span {
+  display: inline-block;
+  color: #FFC72C;
+}
+.header .container .navbar {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 30px);
+  background-color: hsl(0deg, 0%, 100%);
+  padding-inline: 20px;
+  box-shadow: 0 1px 4px hsla(0deg, 0%, 0%, 0.2);
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: 0.25s ease;
+}
+.header .container .navbar.active {
+  height: 236px;
+  visibility: visible;
+}
+.header .container .navbar .navbar-list {
+  margin-block: 10px;
+}
+.header .container .navbar .navbar-list .nav-item:not(:last-child) {
+  border-block-end: 1px solid hsla(0deg, 0%, 0%, 0.04);
+}
+.header .container .navbar .navbar-list .nav-item:not(:last-child) .navbar-link {
+  color: hsl(210deg, 26%, 7%);
+  font-size: 1.4rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: 0.25s ease;
+}
+.header .container .navbar .navbar-list .nav-item:not(:last-child) .navbar-link:is(:hover, :focus) {
+  color: #dacf00;
+}
+.header .header-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .header-btn-group .search-btn {
+  color: hsl(210deg, 26%, 7%);
+  font-size: 20px;
+}
+.header .header-btn-group .search-btn ion-icon {
+  --ionicon-stroke-width:50px;
+}
+.header .header-btn-group .nav-toggle-btn {
+  display: grid;
+  gap: 4px;
+}
+.header .header-btn-group .nav-toggle-btn .line {
+  width: 10px;
+  height: 3px;
+  background-color: hsl(210deg, 26%, 7%);
+  border-radius: 5px;
+  transition: 0.25s ease;
+}
+.header .header-btn-group .nav-toggle-btn .line.middle {
+  width: 20px;
+}
+.header .header-btn-group .nav-toggle-btn .line.bottom {
+  margin-left: auto;
+}
+
+.nav-toggle-btn.active .line.top {
+  transform: translate(1px, 3px) rotate(45deg);
+}
+
+.nav-toggle-btn.active .line.middle {
+  transform: rotate(-45deg);
+}
+
+.nav-toggle-btn.active .line.bottom {
+  transform: translate(-1px, -3px) rotate(45deg);
+}
+
+.header.active {
+  position: fixed;
+  top: -86px;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 1px 4px hsla(0deg, 0%, 0%, 0.2);
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

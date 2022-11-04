@@ -1,0 +1,57 @@
+// VARIABLES
+// COLORS
+$rich-black-fogra-29: hsl(210, 26%, 7%);
+$champagne-pink_20: hsla(23, 61%, 86%, 0.2);
+$independence_30: hsla(245, 17%, 29%, 0.3);
+$gray-x-11-gray: hsl(0, 0%, 73%);
+$champagne-pink: hsl(23, 61%, 86%);
+$spanish-gray: hsl(0, 0%, 60%);
+$sonic-silver: hsl(0, 0%, 47%);
+
+// $deep-saffron: hsl(32, 100%, 59%);
+//$dark-orange: hsl(28, 100%, 58%);
+// $tangerine: hsl(31, 84%, 50%);
+
+$light-yellow: hsl(54, 100%, 59%);//deep-saffron
+$dark-yellow: #dacf00; //dark-orange
+$main-yellow: #FFC72C; //tangarine
+
+$desert-sand: hsl(23, 49%, 82%);
+$isabelline: hsl(38, 44%, 96%);
+$gainsboro: hsl(0, 0%, 87%);
+$cinnabar: hsl(3, 90%, 55%);
+$black_95: hsla(0, 0%, 0%, 0.95);
+$cultured: hsl(0, 0%, 93%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$onyx: hsl(0, 0%, 27%);
+
+// FONT STYLING
+$font-shadows-into-light: 'Shadows Into Light', cursive;
+$font-roboto: 'Roboto', sans-serif;
+$font-rubik: 'Rubik', sans-serif;
+
+$font-size-3_2rem: 3.2rem;
+$font-size-2_2rem: 2.2rem;
+$font-size-1_8rem: 1.8rem;
+$font-size-1_4rem: 1.4rem;
+$font-size-1_2rem: 1.2rem;
+
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+
+// SPACING
+$section-padding: 60px;
+
+// SHADOWS
+$shadow-1: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+$shadow-2: 0 1px 2px hsla(0, 0%, 0%, 0.2);
+
+// TRANSITION
+$transition-0_25: 0.25s ease;
+$transition-0_5: 0.5s ease;
+
+// CLIP PATH
+$clip-path-1: polygon(0 40%, 100% 0%, 100% 100%, 0 100%);
+$clip-path-2: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
