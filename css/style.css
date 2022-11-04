@@ -159,7 +159,7 @@ body.active {
 .header .container .navbar .navbar-list .nav-item:not(:last-child) {
   border-block-end: 1px solid hsla(0deg, 0%, 0%, 0.04);
 }
-.header .container .navbar .navbar-list .nav-item:not(:last-child) .navbar-link {
+.header .container .navbar .navbar-list .nav-item .navbar-link {
   color: hsl(210deg, 26%, 7%);
   font-size: 1.4rem;
   font-family: "Rubik", sans-serif;
@@ -167,7 +167,7 @@ body.active {
   padding: 10px 15px;
   transition: 0.25s ease;
 }
-.header .container .navbar .navbar-list .nav-item:not(:last-child) .navbar-link:is(:hover, :focus) {
+.header .container .navbar .navbar-list .nav-item .navbar-link:is(:hover, :focus) {
   color: #dacf00;
 }
 .header .header-btn-group {
@@ -227,6 +227,62 @@ body.active {
   100% {
     transform: translateY(100%);
   }
+}
+.search-container {
+  position: fixed;
+  top: -60%;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-color: hsla(0deg, 0%, 0%, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 15px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.search-container.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(50%);
+}
+.search-container .search-box {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+.search-container .search-box .search-input {
+  color: hsl(0deg, 0%, 87%);
+  font-size: 3rem;
+  padding: 20px 15px;
+  padding-inline-end: 70px;
+}
+.search-container .search-box .search-input::placeholder {
+  color: hsl(0deg, 0%, 60%);
+}
+.search-container .search-box .search-input::-webkit-search-cancel-button {
+  display: none;
+}
+.search-container .search-box .search-submit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  color: hsl(0deg, 0%, 27%);
+  font-size: 4rem;
+  transition: 0.25s ease;
+}
+.search-container .search-box .search-submit:is(:hover, :focus) {
+  color: hsl(0deg, 0%, 87%);
+}
+.search-container .search-close-btn {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  cursor: url("../images/close.png"), auto;
 }
 
 /*# sourceMappingURL=style.css.map */

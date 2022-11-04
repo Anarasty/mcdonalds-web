@@ -63,7 +63,9 @@
 
                 .nav-item:not(:last-child) {
                     border-block-end: 1px solid hsla(0, 0%, 0%, 0.04);
-                
+                }
+
+                .nav-item {
                     .navbar-link {
                         color: $rich-black-fogra-29;
                         font-size: $font-size-1_4rem;
