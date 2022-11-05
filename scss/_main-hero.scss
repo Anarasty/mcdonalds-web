@@ -1,0 +1,48 @@
+main {
+  article {
+    .hero {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-block: 145px 60px;
+      text-align: center;
+
+      .container {
+        .hero-content {
+          .hero-subtitle {
+            color: $main-yellow;
+            font-family: $font-shadows-into-light;
+            font-size: $font-size-1_8rem;
+            letter-spacing: 1px;
+            margin-block-end: 25px;
+          }
+
+          .hero-title {
+            color: $champagne-pink;
+            max-width: 12ch;
+            margin-inline: auto;
+          }
+
+          .hero-text{
+            color: $desert-sand;
+            margin-block: 15px 30px;
+            max-width: 44ch;
+            margin-inline: auto;
+          }
+
+          .btn {
+            margin-inline: auto;
+
+            &:is(:hover, :focus) {
+                background-color: $white;
+                color: $black;
+            }
+          }
+        }
+        .hero-banner {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
+    <!-- PRELOAD IMG -->
+    <link rel="preload" as="image" href="./images/hero-banner.png" media="min-width(768px)">
+    <link rel="preload" as="image" href="./images/hero-banner-bg.png" media="min-width(768px)">
+    <link rel="preload" as="image" href="./images/hero-bg.jpg">
   </head>
   <body>
     <!-- !HEADER -->
@@ -67,6 +71,31 @@
         </div>
         <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
     </div>
+
+    <!-- MAIN PAGE SECTION -->
+    <main>
+      <article>
+        <!-- HERO -->
+        <section class="hero" id="home" style="background-image: url('./images/hero-bg.jpg')">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">I'm lovin' It!</p>
+              <h2 class="h1 hero-title">Super delicious Burger in town!</h2>
+              <p class="hero-text">Food is any substance consumed to
+                provide nutritional support for an organism.
+              </p>
+              <button class="btn">Order now</button>
+            </div>
+            <figure class="hero-banner">
+              <img src="./images/hero-banner-bg.png" width="820" height="716" loading="lazy" alt="" class="w-100 hero-img-bg">
+              <img src="./images/hero-banner.png" width="444" height="507" alt="Burger" class="w-100 hero-img">
+            </figure>
+          </div>
+        </section>
+      </article>
+    </main>
+
+
 
     <!-- scripts -->
     <script src="script.js" defer></script>

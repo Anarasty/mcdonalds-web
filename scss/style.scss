@@ -74,36 +74,106 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   overflow-x: hidden;
-}
 
-body.active {
-  overflow: hidden;
+  &.active {
+    overflow: hidden;
+  }
 }
 
 :focus-visible {
   outline-offset: 4px;
 }
 
-::selection{
-    background-color: $light-yellow;
-    color: $white;
+::selection {
+  background-color: $light-yellow;
+  color: $white;
 }
 
-::-webkit-scrollbar{
-    width: 8px;
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-::-webkit-scrollbar-track{
-    background-color: $cultured;
+::-webkit-scrollbar-track {
+  background-color: $cultured;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: $light-yellow;
+  background-color: $light-yellow;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: $main-yellow;
+  background-color: $main-yellow;
+}
+
+// ?REUSED STYLES
+.container {
+  padding-inline: 15px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: $font-rubik;
+  color: $rich-black-fogra-29;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.h1,
+.h2 {
+  font-size: $font-size-3_2rem;
+}
+
+.h2,
+.h3,
+.h4 {
+  font-weight: $font-weight-600;
+}
+
+.h3 {
+  font-size: $font-size-2_2rem;
+}
+
+.h4 {
+  font-size: $font-size-1_8rem;
+}
+
+.btn {
+  background-color: $main-yellow; //--bg-color
+  color: $white;
+  font-family: $font-rubik;
+  font-size: $font-size-1_4rem;
+  font-weight: $font-weight-500;
+  height: 45px; //--height
+  padding-inline: 35px; //--padding-inline
+  transition: $transition-0_25;
+}
+
+.btn-hover{
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 20px;
+    width: 1px;
+    height: 1px;
+    transform: translate(-50%, 51%) scale(1);//--scale
+    border-radius: 50%;
+    background-color: $rich-black-fogra-29;
+    z-index: -1;
+    transition: $transition-0_5;
+  }
+
+  &:is(:hover, :focus)::after{
+    transform: scale(500);// ????????
+  }
 }
 
 @import "_header.scss";
 @import "_search-box.scss";
+@import "_main-hero.scss";
