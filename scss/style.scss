@@ -150,7 +150,7 @@ body {
   transition: $transition-0_25;
 }
 
-.btn-hover{
+.btn-hover {
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -162,18 +162,83 @@ body {
     left: 20px;
     width: 1px;
     height: 1px;
-    transform: translate(-50%, 51%) scale(1);//--scale
+    transform: translate(-50%, 51%) scale(1); //--scale
     border-radius: 50%;
     background-color: $rich-black-fogra-29;
     z-index: -1;
     transition: $transition-0_5;
   }
 
-  &:is(:hover, :focus)::after{
-    transform: scale(500);// ????????
+  &:is(:hover, :focus)::after {
+    transform: scale(500); // ????????
   }
 }
+
+.section {
+  padding-block: $section-padding;
+
+  &.white {
+    background-color: $isabelline;
+  }
+}
+
+.section-devider {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-repeat: repeat no-repeat;
+    background-position: bottom;
+  }
+
+  &.white::after {
+    background-image: url("../images/shape-white.png");
+  }
+
+  &.grey::after {
+    background-image: url("../images/shape-white.png");
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.has-scrollbar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  padding-block-end: 40px;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  height: 12px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: calc(25% - 40px);
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  outline: 2px solid $main-yellow;
+  border-radius: 50px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  border: 3px solid $cultured;
+  border-radius: 50px;
+}
+
+// ?REUSED STYLES
 
 @import "_header.scss";
 @import "_search-box.scss";
 @import "_main-hero.scss";
+@import "_main-promo.scss";
