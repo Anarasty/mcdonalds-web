@@ -1,0 +1,130 @@
+.food-menu {
+    text-align: center;
+
+    .section-title {
+        margin-block: 10px 20px;
+    }
+
+    .section-text{
+        max-width: 44ch;
+        margin-inline: auto;
+        margin-block-end: 30px;
+    }
+
+    .filter-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-block-end: 40px;
+
+        .filter-btn {
+            background-color: $white;
+            color: $rich-black-fogra-29;
+            font-family: $font-rubik;
+            font-weight: $font-weight-500;
+            padding: 5px 20px;
+            border: 1px solid $cultured;
+
+            &.active {
+                background-color: $main-yellow;
+                color: $white;
+                border-color: $main-yellow;
+            }
+        }
+    }
+
+    .food-menu-list {
+        display: grid;
+        gap: 30px;
+
+        .food-menu-card {
+            background-color: $white;
+            padding: 40px;
+            box-shadow: $shadow-2;
+
+            &:focus-within {
+                outline: 1px auto -webkit-focus-ring-color;
+            }
+
+            .card-banner {
+                position: relative;
+                padding-block-start: 30px;
+                max-width: max-content;
+                aspect-ratio: 1 / 1;
+                margin-inline: auto;
+
+                .badge {
+                    top: 0;
+                    left: 0;
+                }
+
+                .food-menu-btn {
+                    position: absolute;
+                    top: calc(50% + 15px);
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    min-width: max-content;
+                    background-color: $cinnabar;
+                    width: 60%;
+                    height: 40px;
+                    padding-inline: 20px;
+                    opacity: 0;
+                    transition: $transition-0_5;
+
+                    &:is(:hover, :focus) {
+                        background-color: $main-yellow;
+                    }
+                }
+            }
+
+            &:is(:hover, :focus-within) .food-menu-btn {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                margin-block: 20px 10px;
+
+                .category {
+                    font-family: $font-rubik;
+                    font-weight: $font-weight-500;
+                }
+
+                .rating-wrapper {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .card-title {
+                margin-block-end: 10px;
+            }
+
+            .price-wrapper {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                font-family: $font-rubik;
+                font-weight: $font-weight-600;
+
+                .price-text {
+                    color: $cinnabar;
+                    text-transform: uppercase;
+                    padding-inline-end: 5px;
+                }
+
+                .price {
+                    color: $main-yellow;
+                }
+
+                .del {
+                    color: $gray-x-11-gray;
+                }
+            }
+        }
+    }
+}

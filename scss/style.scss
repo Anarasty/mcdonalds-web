@@ -247,20 +247,42 @@ body {
 }
 
 .scale-up-anim {
-  animation: scaleUp 1s linear infinite alternate; 
+  animation: scaleUp 1s linear infinite alternate;
 }
 
 @keyframes scaleUp {
-  0%{
+  0% {
     transform: scale(1);
   }
-  100%{
+  100% {
     transform: scale(1.05);
   }
 }
 
 .section-title > .span {
   display: inline-block;
+  color: $main-yellow;
+}
+
+.section-subtitle {
+  color: $cinnabar;
+  font-family: $font-rubik;
+  text-align: center;
+  font-weight: $font-weight-500;
+}
+
+.badge {
+  position: absolute;
+  background-color: $cinnabar;
+  color: $white;
+  font-size: $font-size-1_2rem;
+  font-weight: $font-weight-600;
+  padding: 2px 15px;
+}
+
+.rating-wrapper {
+  display: flex;
+  gap: 5px;
   color: $main-yellow;
 }
 
@@ -271,3 +293,4 @@ body {
 @import "_main-hero.scss";
 @import "_main-promo.scss";
 @import "_main-about.scss";
+@import "_main-food-menu.scss";
