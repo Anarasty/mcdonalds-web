@@ -182,7 +182,7 @@ body {
   }
 }
 
-.section-devider {
+.section-divider {
   position: relative;
 
   &::before,
@@ -205,6 +205,11 @@ body {
     background-image: url("../images/shape-white.png");
   }
 }
+
+// .section-devider.white::after {
+//   background-image: url("../images/shape-white.png");
+
+// }
 
 .w-100 {
   width: 100%;
@@ -236,9 +241,33 @@ body {
   border-radius: 50px;
 }
 
+.abs-img {
+  position: absolute;
+  transform: scale(1);
+}
+
+.scale-up-anim {
+  animation: scaleUp 1s linear infinite alternate; 
+}
+
+@keyframes scaleUp {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.05);
+  }
+}
+
+.section-title > .span {
+  display: inline-block;
+  color: $main-yellow;
+}
+
 // ?REUSED STYLES
 
 @import "_header.scss";
 @import "_search-box.scss";
 @import "_main-hero.scss";
 @import "_main-promo.scss";
+@import "_main-about.scss";

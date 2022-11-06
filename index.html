@@ -14,81 +14,128 @@
       rel="stylesheet"
     />
     <!-- PRELOAD IMG -->
-    <link rel="preload" as="image" href="./images/hero-banner.png" media="min-width(768px)">
-    <link rel="preload" as="image" href="./images/hero-banner-bg.png" media="min-width(768px)">
-    <link rel="preload" as="image" href="./images/hero-bg.jpg">
+    <link
+      rel="preload"
+      as="image"
+      href="./images/hero-banner.png"
+      media="min-width(768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./images/hero-banner-bg.png"
+      media="min-width(768px)"
+    />
+    <link rel="preload" as="image" href="./images/hero-bg.jpg" />
   </head>
   <body>
     <!-- !HEADER -->
     <header class="header" data-header>
       <div class="container">
-        <h1><a href="#" class="logo"><span class="span">Mc</span>Donalds</a></h1>
-        
+        <h1>
+          <a href="#" class="logo"><span class="span">Mc</span>Donalds</a>
+        </h1>
+
         <nav class="navbar" data-navbar>
-            <ul class="navbar-list">
-                <li class="nav-item">
-                    <a href="#home" class="navbar-link" data-nav-link>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="navbar-link" data-nav-link>About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
-                </li>
-            </ul>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+            </li>
+          </ul>
         </nav>
 
         <div class="header-btn-group">
-            <button class="search-btn" aria-label="Search" data-search-btn>
-                <ion-icon name="search-outline"></ion-icon>
-            </button>
+          <button class="search-btn" aria-label="Search" data-search-btn>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
 
-            <button class="btn btn-hover">Reservation</button>
-            
-            <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
-                <span class="line top"></span>
-                <span class="line middle"></span>
-                <span class="line bottom"></span>
-            </button>
+          <button class="btn btn-hover">Reservation</button>
+
+          <button
+            class="nav-toggle-btn"
+            aria-label="Toggle Menu"
+            data-nav-toggle-btn
+          >
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+          </button>
         </div>
-
       </div>
     </header>
 
     <!-- ?SEARCH BOX -->
     <div class="search-container" data-search-container>
-        <div class="search-box">
-            <input type="search" name="search" aria-label="Search here" class="search-input" placeholder="Type keywords here ...">
-            <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
-                <ion-icon name="search-outline"></ion-icon>
-            </button>
-        </div>
-        <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+      <div class="search-box">
+        <input
+          type="search"
+          name="search"
+          aria-label="Search here"
+          class="search-input"
+          placeholder="Type keywords here ..."
+        />
+        <button
+          class="search-submit"
+          aria-label="Submit search"
+          data-search-submit-btn
+        >
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+      <button
+        class="search-close-btn"
+        aria-label="Cancel search"
+        data-search-close-btn
+      ></button>
     </div>
 
     <!-- MAIN PAGE SECTION -->
     <main>
       <article>
         <!-- HERO -->
-        <section class="hero" id="home" style="background-image: url('./images/hero-bg.jpg')">
+        <section
+          class="hero"
+          id="home"
+          style="background-image: url('./images/hero-bg.jpg')"
+        >
           <div class="container">
             <div class="hero-content">
               <p class="hero-subtitle">I'm lovin' It!</p>
               <h2 class="h1 hero-title">Super delicious Burger in town!</h2>
-              <p class="hero-text">Food is any substance consumed to
-                provide nutritional support for an organism.
+              <p class="hero-text">
+                Food is any substance consumed to provide nutritional support
+                for an organism.
               </p>
               <button class="btn">Order now</button>
             </div>
             <figure class="hero-banner">
-              <img src="./images/hero-banner-bg.png" width="820" height="716" loading="lazy" alt="" class="w-100 hero-img-bg">
-              <img src="./images/hero-banner.png" width="444" height="507" alt="Burger" class="w-100 hero-img">
+              <img
+                src="./images/hero-banner-bg.png"
+                width="820"
+                height="716"
+                loading="lazy"
+                alt=""
+                class="w-100 hero-img-bg"
+              />
+              <img
+                src="./images/hero-banner.png"
+                width="444"
+                height="507"
+                alt="Burger"
+                class="w-100 hero-img"
+              />
             </figure>
           </div>
         </section>
@@ -97,85 +144,196 @@
         <section class="section section-divider white promo">
           <div class="container">
             <ul class="promo-list has-scrollbar">
-
               <li class="promo-item">
                 <div class="promo-card">
                   <div class="card-icon">
-                    <img src="./images/burger-icon.png" alt="burg-ico" width="60" height="60">
+                    <img
+                      src="./images/burger-icon.png"
+                      alt="burg-ico"
+                      width="60"
+                      height="60"
+                    />
                   </div>
                   <h3 class="h3 card-title">Tasty Burger</h3>
                   <p class="card-text">
-                    Food is any substance consumed to
-                    provide nutritional support for an organism.
+                    Food is any substance consumed to provide nutritional
+                    support for an organism.
                   </p>
-                  <img src="images/promo-1.png" loading="lazy" width="300" height="300" class="w-100 card-banner" alt="Tasty Burger">
+                  <img
+                    src="images/promo-1.png"
+                    loading="lazy"
+                    width="300"
+                    height="300"
+                    class="w-100 card-banner"
+                    alt="Tasty Burger"
+                  />
                 </div>
               </li>
 
               <li class="promo-item">
                 <div class="promo-card">
                   <div class="card-icon">
-                    <img src="./images/fried-potatoes-icon.png" alt="potato-ico" width="60" height="60">
+                    <img
+                      src="./images/fried-potatoes-icon.png"
+                      alt="potato-ico"
+                      width="60"
+                      height="60"
+                    />
                   </div>
                   <h3 class="h3 card-title">French Fries</h3>
                   <p class="card-text">
-                    Food is any substance consumed to
-                    provide nutritional support for an organism.
+                    Food is any substance consumed to provide nutritional
+                    support for an organism.
                   </p>
-                  <img src="images/promo-2.png" loading="lazy" width="300" height="300" class="w-100 card-banner" alt="French Fries">
+                  <img
+                    src="images/promo-2.png"
+                    loading="lazy"
+                    width="300"
+                    height="300"
+                    class="w-100 card-banner"
+                    alt="French Fries"
+                  />
                 </div>
               </li>
 
               <li class="promo-item">
                 <div class="promo-card">
                   <div class="card-icon">
-                    <img src="./images/nuggets-icon.png" alt="nuggs-ico" width="60" height="60">
+                    <img
+                      src="./images/nuggets-icon.png"
+                      alt="nuggs-ico"
+                      width="60"
+                      height="60"
+                    />
                   </div>
                   <h3 class="h3 card-title">Nuggets</h3>
                   <p class="card-text">
-                    Food is any substance consumed to
-                    provide nutritional support for an organism.
+                    Food is any substance consumed to provide nutritional
+                    support for an organism.
                   </p>
-                  <img src="images/promo-3.png" loading="lazy" width="300" height="300" class="w-100 card-banner" alt="Nuggets">
+                  <img
+                    src="images/promo-3.png"
+                    loading="lazy"
+                    width="300"
+                    height="300"
+                    class="w-100 card-banner"
+                    alt="Nuggets"
+                  />
                 </div>
               </li>
 
               <li class="promo-item">
                 <div class="promo-card">
                   <div class="card-icon">
-                    <img src="./images/coffee-cup-icon.png" alt="coffee-ico" width="60" height="60">
+                    <img
+                      src="./images/coffee-cup-icon.png"
+                      alt="coffee-ico"
+                      width="60"
+                      height="60"
+                    />
                   </div>
                   <h3 class="h3 card-title">Ice Coffee</h3>
                   <p class="card-text">
-                    Food is any substance consumed to
-                    provide nutritional support for an organism.
+                    Food is any substance consumed to provide nutritional
+                    support for an organism.
                   </p>
-                  <img src="images/promo-4.png" loading="lazy" width="300" height="300" class="w-100 card-banner" alt="Ice Coffee">
+                  <img
+                    src="images/promo-4.png"
+                    loading="lazy"
+                    width="300"
+                    height="300"
+                    class="w-100 card-banner"
+                    alt="Ice Coffee"
+                  />
                 </div>
               </li>
 
               <li class="promo-item">
                 <div class="promo-card">
                   <div class="card-icon">
-                    <img src="./images/ice-cream-icon.png" alt="icecream-ico" width="60" height="60">
+                    <img
+                      src="./images/ice-cream-icon.png"
+                      alt="icecream-ico"
+                      width="60"
+                      height="60"
+                    />
                   </div>
                   <h3 class="h3 card-title">Ice Cream</h3>
                   <p class="card-text">
-                    Food is any substance consumed to
-                    provide nutritional support for an organism.
+                    Food is any substance consumed to provide nutritional
+                    support for an organism.
                   </p>
-                  <img src="images/promo-5.png" loading="lazy" width="300" height="300" class="w-100 card-banner" alt="Ice Coffee">
+                  <img
+                    src="images/promo-5.png"
+                    loading="lazy"
+                    width="300"
+                    height="300"
+                    class="w-100 card-banner"
+                    alt="Ice Coffee"
+                  />
                 </div>
               </li>
-              
             </ul>
           </div>
         </section>
 
+        <!-- ABOUT SECTION -->
+        <section class="section section-divider grey about" id="about">
+          <div class="container">
+            <div class="about-banner">
+              <img
+                src="./images/about-banner.png"
+                width="500"
+                height="500"
+                loading="lazy"
+                alt="burger menu"
+                class="w-100 about-img"
+              />
+              <img
+                src="images/sale-shape-red.png"
+                width="150"
+                height="150"
+                loading="lazy"
+                alt="40% offer"
+                class="abs-img scale-up-anim"
+              />
+            </div>
+            <div class="about-content">
+              <h2 class="h2 section-title">
+                Super tasty menu with <span class="span">discount!</span>
+              </h2>
+
+              <p class="section-text">
+                Get 40% offer for Big Mac meal with any $1 minimum Mobile Order & Pay
+                purchase, only in the app. After all—without Big Mac meal with 40% offer,
+                Fridays are just another day.
+              </p>
+
+              <ul class="about-list">
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span class="span">Delicious and tasty food</span>
+                </li>
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span class="span">Comfortable sitting places</span>
+                </li>
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span class="span">Family and kids zone</span>
+                </li>
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span class="span">Fast ordering and serving</span>
+                </li>
+              </ul>
+              <button class="btn btn-hover">Order now</button>
+
+            </div>
+          </div>
+        </section>
       </article>
     </main>
-
-
 
     <!-- scripts -->
     <script src="script.js" defer></script>

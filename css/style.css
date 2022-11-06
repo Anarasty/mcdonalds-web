@@ -173,10 +173,10 @@ body.active {
   background-color: hsl(38deg, 44%, 96%);
 }
 
-.section-devider {
+.section-divider {
   position: relative;
 }
-.section-devider::before, .section-devider::after {
+.section-divider::before, .section-divider::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -186,10 +186,10 @@ body.active {
   background-repeat: repeat no-repeat;
   background-position: bottom;
 }
-.section-devider.white::after {
+.section-divider.white::after {
   background-image: url("../images/shape-white.png");
 }
-.section-devider.grey::after {
+.section-divider.grey::after {
   background-image: url("../images/shape-white.png");
 }
 
@@ -221,6 +221,28 @@ body.active {
 .has-scrollbar::-webkit-scrollbar-thumb {
   border: 3px solid hsl(0deg, 0%, 93%);
   border-radius: 50px;
+}
+
+.abs-img {
+  position: absolute;
+  transform: scale(1);
+}
+
+.scale-up-anim {
+  animation: scaleUp 1s linear infinite alternate;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.section-title > .span {
+  display: inline-block;
+  color: #FFC72C;
 }
 
 .header-btn-group .btn {
@@ -484,6 +506,55 @@ main article .hero .container .hero-banner {
   max-width: max-content;
   margin-inline: auto;
   aspect-ratio: 1/1;
+}
+
+.about {
+  text-align: center;
+}
+.about .container .about-banner {
+  position: relative;
+  aspect-ratio: 1/0.9;
+}
+.about .container .about-banner .about-img {
+  max-width: max-content;
+  margin-inline: auto;
+}
+.about .container .about-banner .abs-img {
+  top: -80px;
+  left: 120px;
+}
+.about .container .about-content .section-title {
+  max-width: 15ch;
+  margin-block: 40px 10px;
+  margin-inline: auto;
+}
+.about .container .about-content .about-list {
+  margin-block: 20px 30px;
+}
+.about .container .about-content .about-list .about-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.about .container .about-content .about-list .about-item:not(:last-child) {
+  margin-block-end: 10px;
+}
+.about .container .about-content .about-list .about-item ion-icon {
+  background-color: #FFC72C;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  padding: 4px;
+  border-radius: 50%;
+  --ionicon-stroke-width: 110px;
+}
+.about .container .about-content .about-list .about-item .span {
+  color: hsl(210deg, 26%, 7%);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+.about .container .about-content .btn {
+  margin-inline: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
