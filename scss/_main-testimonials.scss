@@ -1,0 +1,53 @@
+.testi {
+    text-align: center;
+
+    .container {
+        .section-title {
+            margin-block: 10px 20px;
+        }
+
+        .section-text {
+            max-width: 44ch;
+            margin-inline: auto;
+            margin-block-end: 30px;
+        }
+
+        .testi-list {
+            .testi-item {
+                min-width: 100%;
+                scroll-snap-align: start;
+                .testi-card {
+                    background-color: $white;
+                    padding: 40px;
+                    text-align: left;
+                    box-shadow: $shadow-2;
+
+                    .profile-wrapper {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+
+                        .avatar {
+                            min-width: max-content;
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+
+                        .testi-name {
+                            margin-block-end: 2px;
+                        }
+
+                        .testi-title {
+                            font-family: $font-rubik;
+                            font-size: $font-size-1_4rem;
+                        }
+
+                        .testi-text {
+                            margin-block: 20px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
