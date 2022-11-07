@@ -1,0 +1,30 @@
+.delivery {
+    .container {
+        .delivery-content {
+            margin-block-end: 40px;
+
+            .section-title {
+                max-width: 17ch;
+                line-height: 1.6;
+                letter-spacing: -2px;
+            }
+
+            .section-text {
+                margin-block: 15px 25px;
+            }
+        }
+
+        .delivery-banner {
+            position: relative;
+            aspect-ratio: 1 / 0.86;
+        }
+
+        .delivery-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-20px);
+            transition: $transition-0_5;
+        }
+    }
+}

@@ -43,3 +43,27 @@ for (let i = 0; i < searchBoxElems.length; i++) {
         document.body.classList.toggle("active");
     });
 }
+
+// animation delivery on scroll
+const deliveryBoy = document.querySelector("[data-delivery-boy]");
+
+let deliveryBoyMove = -20;
+let lastScrollPos = 0;
+
+window.addEventListener("scroll", function () {
+  let deliveryBoyTopPos = deliveryBoy.getBoundingClientRect().top;
+
+  if (deliveryBoyTopPos < 500 && deliveryBoyTopPos > -250) {
+    let activeScrollPos = window.scrollY;
+
+    if (lastScrollPos < activeScrollPos) {
+      deliveryBoyMove++;
+    } else {
+      deliveryBoyMove--;
+    }
+
+    lastScrollPos = activeScrollPos;
+
+    deliveryBoy.style.transform = `translateX(${deliveryBoyMove}px)`;
+  }
+})
