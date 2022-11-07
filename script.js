@@ -47,7 +47,7 @@ for (let i = 0; i < searchBoxElems.length; i++) {
 // animation delivery on scroll
 const deliveryBoy = document.querySelector("[data-delivery-boy]");
 
-let deliveryBoyMove = -20;
+let deliveryBoyMove = 0;
 let lastScrollPos = 0;
 
 window.addEventListener("scroll", function () {

@@ -747,7 +747,6 @@ main article .hero .container .hero-banner {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-20px);
   transition: 0.5s ease;
 }
 
