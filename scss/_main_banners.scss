@@ -1,0 +1,89 @@
+.banner {
+  color: $rich-black-fogra-29;
+
+  .banner-list {
+    display: grid;
+    gap: 10px;
+
+    .banner-lg {
+      height: 430px;
+
+      .banner-subtitle {
+        font-size: $font-size-2_2rem;
+        margin-block-end: 10px;
+      }
+
+      .banner-title {
+        font-size: $font-size-3_2rem;
+        max-width: 16ch;
+      }
+    }
+
+    .banner-sm {
+      height: 200px;
+    }
+
+    .banner-md {
+      height: 240px;
+
+      .banner-item-content {
+        left: 50%;
+      }
+    }
+
+    .banner-card {
+      position: relative;
+      background-color: $gainsboro;
+      height: 100%;
+      box-shadow: $shadow-2;
+      overflow: hidden;
+
+      &:is(:hover, :focus-within) .banner-img {
+        transform: scale(1.05);
+      }
+
+      .banner-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: $transition-0_5;
+      }
+
+      .banner-item-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        right: 20px;
+        max-height: calc(100% - 30px);
+
+        .banner-subtitle, .banner-title {
+            font-family: $font-rubik;
+            font-weight: $font-weight-600;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .banner-text {
+            margin-block: 10px 15px;
+        }
+
+        .btn {
+            background-color: $main-yellow;
+            height: 40px;
+            padding-inline: 25px;
+
+            &:is(:hover, :focus) {
+                background-color: $rich-black-fogra-29;
+            }
+        }
+      }
+    }
+  }
+}
+
+:is(.banner-md, .banner-sm) .banner-title {
+    font-size: $font-size-2_2rem;
+    max-width: 10ch;
+}

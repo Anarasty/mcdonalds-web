@@ -792,4 +792,79 @@ main article .hero .container .hero-banner {
   margin-block: 20px 15px;
 }
 
+.banner {
+  color: hsl(210deg, 26%, 7%);
+}
+.banner .banner-list {
+  display: grid;
+  gap: 10px;
+}
+.banner .banner-list .banner-lg {
+  height: 430px;
+}
+.banner .banner-list .banner-lg .banner-subtitle {
+  font-size: 2.2rem;
+  margin-block-end: 10px;
+}
+.banner .banner-list .banner-lg .banner-title {
+  font-size: 3.2rem;
+  max-width: 16ch;
+}
+.banner .banner-list .banner-sm {
+  height: 200px;
+}
+.banner .banner-list .banner-md {
+  height: 240px;
+}
+.banner .banner-list .banner-md .banner-item-content {
+  left: 50%;
+}
+.banner .banner-list .banner-card {
+  position: relative;
+  background-color: hsl(0deg, 0%, 87%);
+  height: 100%;
+  box-shadow: 0 1px 2px hsla(0deg, 0%, 0%, 0.2);
+  overflow: hidden;
+}
+.banner .banner-list .banner-card:is(:hover, :focus-within) .banner-img {
+  transform: scale(1.05);
+}
+.banner .banner-list .banner-card .banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+.banner .banner-list .banner-card .banner-item-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  right: 20px;
+  max-height: calc(100% - 30px);
+}
+.banner .banner-list .banner-card .banner-item-content .banner-subtitle, .banner .banner-list .banner-card .banner-item-content .banner-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+.banner .banner-list .banner-card .banner-item-content .banner-text {
+  margin-block: 10px 15px;
+}
+.banner .banner-list .banner-card .banner-item-content .btn {
+  background-color: #FFC72C;
+  height: 40px;
+  padding-inline: 25px;
+}
+.banner .banner-list .banner-card .banner-item-content .btn:is(:hover, :focus) {
+  background-color: hsl(210deg, 26%, 7%);
+}
+
+:is(.banner-md, .banner-sm) .banner-title {
+  font-size: 2.2rem;
+  max-width: 10ch;
+}
+
 /*# sourceMappingURL=style.css.map */
