@@ -26,8 +26,10 @@
     .banner-md {
       height: 240px;
 
-      .banner-item-content {
-        left: 50%;
+      .banner-card {
+        .banner-item-content {
+          left: 50%;
+        }
       }
     }
 
@@ -58,25 +60,26 @@
         right: 20px;
         max-height: calc(100% - 30px);
 
-        .banner-subtitle, .banner-title {
-            font-family: $font-rubik;
-            font-weight: $font-weight-600;
-            line-height: 1.2;
-            letter-spacing: -0.5px;
+        .banner-subtitle,
+        .banner-title {
+          font-family: $font-rubik;
+          font-weight: $font-weight-600;
+          line-height: 1.2;
+          letter-spacing: -0.5px;
         }
 
         .banner-text {
-            margin-block: 10px 15px;
+          margin-block: 10px 15px;
         }
 
         .btn {
-            background-color: $main-yellow;
-            height: 40px;
-            padding-inline: 25px;
+          background-color: $main-yellow;
+          height: 40px;
+          padding-inline: 25px;
 
-            &:is(:hover, :focus) {
-                background-color: $rich-black-fogra-29;
-            }
+          &:is(:hover, :focus) {
+            background-color: $rich-black-fogra-29;
+          }
         }
       }
     }
@@ -84,6 +87,6 @@
 }
 
 :is(.banner-md, .banner-sm) .banner-title {
-    font-size: $font-size-2_2rem;
-    max-width: 10ch;
+  font-size: $font-size-2_2rem;
+  max-width: 10ch;
 }

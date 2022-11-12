@@ -816,7 +816,7 @@ main article .hero .container .hero-banner {
 .banner .banner-list .banner-md {
   height: 240px;
 }
-.banner .banner-list .banner-md .banner-item-content {
+.banner .banner-list .banner-md .banner-card .banner-item-content {
   left: 50%;
 }
 .banner .banner-list .banner-card {
@@ -844,7 +844,8 @@ main article .hero .container .hero-banner {
   right: 20px;
   max-height: calc(100% - 30px);
 }
-.banner .banner-list .banner-card .banner-item-content .banner-subtitle, .banner .banner-list .banner-card .banner-item-content .banner-title {
+.banner .banner-list .banner-card .banner-item-content .banner-subtitle,
+.banner .banner-list .banner-card .banner-item-content .banner-title {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -865,6 +866,96 @@ main article .hero .container .hero-banner {
 :is(.banner-md, .banner-sm) .banner-title {
   font-size: 2.2rem;
   max-width: 10ch;
+}
+
+.blog {
+  text-align: center;
+}
+.blog .container .section-title {
+  margin-block: 10px 20px;
+}
+.blog .container .section-text {
+  margin-block-end: 40px;
+  max-width: 44ch;
+  margin-inline: auto;
+}
+.blog .container .blog-list {
+  display: grid;
+  gap: 30px;
+}
+.blog .container .blog-list .blog-card {
+  background-color: hsl(0deg, 0%, 100%);
+  text-align: left;
+  box-shadow: 0 1px 2px hsla(0deg, 0%, 0%, 0.2);
+}
+.blog .container .blog-list .blog-card .card-banner {
+  position: relative;
+  aspect-ratio: 1/0.65;
+  background-color: hsl(0deg, 0%, 87%);
+}
+.blog .container .blog-list .blog-card .card-banner .badge {
+  top: 20px;
+  right: 20px;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  background-color: #FFC72C;
+  padding-block: 5px;
+}
+.blog .container .blog-list .blog-card .card-content {
+  padding: 30px;
+}
+.blog .container .blog-list .blog-card .card-content .card-meta-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px 20px;
+}
+.blog .container .blog-list .blog-card .card-content .card-meta-wrapper .card-meta-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.blog .container .blog-list .blog-card .card-content .card-meta-wrapper .card-meta-link ion-icon {
+  color: #FFC72C;
+  font-size: 1.5rem;
+  --ionicon-stroke-width: 60px;
+}
+.blog .container .blog-list .blog-card .card-content .card-meta-wrapper .card-meta-link:is(:hover, :focus) .meta-info {
+  color: #FFC72C;
+}
+.blog .container .blog-list .blog-card .card-content .h3 .card-title {
+  font-size: 1.8rem;
+  margin-block: 20px 15px;
+  transition: 0.25s ease;
+}
+.blog .container .blog-list .blog-card .card-content .h3 .card-title:is(:hover, :focus) {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.blog .container .blog-list .blog-card .card-content .card-text {
+  margin-block-end: 20px;
+}
+.blog .container .blog-list .blog-card .card-content .btn-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.blog .container .blog-list .blog-card .card-content .btn-link ion-icon {
+  font-size: 1.5rem;
+}
+.blog .container .blog-list .blog-card .card-content .btn-link:is(:hover, :focus) {
+  color: #FFC72C;
+  gap: 10px;
+}
+.blog .container .blog-list .blog-card :is(.meta-info, .btn-link) {
+  color: hsl(210deg, 26%, 7%);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  transition: 0.25s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

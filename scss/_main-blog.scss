@@ -1,0 +1,111 @@
+.blog {
+    text-align: center;
+
+    .container {
+        .section-title {
+            margin-block: 10px 20px;
+        }
+
+        .section-text {
+            margin-block-end: 40px;
+            max-width: 44ch;
+            margin-inline: auto;
+        }
+
+        .blog-list {
+            display: grid;
+            gap: 30px;
+            
+            .blog-card {
+                background-color: $white;
+                text-align: left;
+                box-shadow: $shadow-2;
+
+                .card-banner {
+                    position: relative;
+                    aspect-ratio: 1 / 0.65;
+                    background-color: $gainsboro;
+                    
+                    .badge {
+                        top: 20px;
+                        right: 20px;
+                        font-family: $font-rubik;
+                        text-transform: uppercase;
+                        background-color: $main-yellow;
+                        padding-block: 5px;
+                    }
+                }
+
+                .card-content {
+                    padding: 30px;
+
+                    .card-meta-wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 12px 20px;
+
+                        .card-meta-link {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            ion-icon {
+                                color: $main-yellow;
+                                font-size: 1.5rem;
+                                --ionicon-stroke-width: 60px;
+                            }
+
+                            &:is(:hover, :focus) .meta-info {
+                                color: $main-yellow;
+                            }
+                        }
+                    }
+
+                    .h3 {
+                        .card-title {
+                            font-size: $font-size-1_8rem;
+                            margin-block: 20px 15px;
+                            transition: $transition-0_25;
+
+                            &:is(:hover, :focus) {
+                                opacity: 0.8;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .card-text {
+                        margin-block-end: 20px;
+                    }
+
+                    .btn-link {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        ion-icon {
+                            font-size: 1.5rem;
+                        }
+
+                        &:is(:hover, :focus) {
+                            color: $main-yellow;
+                            gap: 10px;
+                        }
+                    }
+                }
+
+                & :is(.meta-info, .btn-link) {
+                    color: $rich-black-fogra-29;
+                    font-family: $font-rubik;
+                    font-size: $font-size-1_2rem;
+                    font-weight: $font-weight-600;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    transition: $transition-0_25;
+                }
+            }
+        }
+    }
+}
