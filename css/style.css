@@ -958,4 +958,137 @@ main article .hero .container .hero-banner {
   transition: 0.25s ease;
 }
 
+.footer .footer-top {
+  position: relative;
+  padding-block: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  border-block-end: 2px solid hsla(245deg, 17%, 29%, 0.3);
+}
+.footer .footer-top .container {
+  display: grid;
+  gap: 30px;
+}
+.footer .footer-top .container .footer-brand .logo {
+  color: hsl(210deg, 26%, 7%);
+  font-size: 3.2rem;
+}
+.footer .footer-top .container .footer-brand .footer-text {
+  margin-block: 15px 25px;
+}
+.footer .footer-top .container .footer-brand .social-list {
+  display: flex;
+  gap: 5px;
+}
+.footer .footer-top .container .footer-brand .social-list .social-link {
+  background-color: #FFC72C;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  padding: 10px;
+  transition: 0.25s ease;
+}
+.footer .footer-top .container .footer-brand .social-list .social-link:is(:hover, :focus) {
+  background-color: hsl(210deg, 26%, 7%);
+}
+.footer .footer-top .container .footer-list .footer-list-title {
+  position: relative;
+  max-width: max-content;
+  color: hsl(210deg, 26%, 7%);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-block-end: 20px;
+}
+.footer .footer-top .container .footer-list .footer-list-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% + 15px);
+  background-color: #FFC72C;
+  width: 40px;
+  height: 4px;
+  border-inline-end: 5px solid #FFC72C;
+  box-shadow: inset -5px 0 0 hsl(0deg, 0%, 100%);
+}
+.footer .footer-top .container .footer-list > li:not(:last-child) {
+  margin-block-end: 15px;
+}
+.footer .footer-top .container .footer-list address {
+  max-width: 20ch;
+}
+.footer .footer-top .container .footer-form {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 30px;
+  border: 1px solid hsl(0deg, 0%, 93%);
+  box-shadow: 0 1px 2px hsla(0deg, 0%, 0%, 0.2);
+}
+.footer .footer-top .container .footer-form .input-wrapper {
+  display: grid;
+  gap: 10px;
+  margin-block-end: 10px;
+}
+.footer .footer-top .container .footer-form .input-wrapper .input-field {
+  color: hsl(0deg, 0%, 60%);
+  font-size: 1.4rem;
+  border: 1px solid hsl(0deg, 0%, 93%);
+  padding: 8px 12px;
+}
+.footer .footer-top .container .footer-form .input-wrapper .input-field::placeholder {
+  color: hsl(0deg, 0%, 60%);
+}
+.footer .footer-top .container .footer-form .input-wrapper .input-field::-webkit-calendar-picker-indicator {
+  opacity: 0.5;
+}
+.footer .footer-top .container .footer-form textarea.input-field {
+  min-height: 50px;
+  max-height: 150px;
+  height: 100px;
+  resize: vertical;
+  margin-block-end: 10px;
+}
+.footer .footer-top .container .footer-form .btn {
+  font-size: 1.5rem;
+  height: 40px;
+  padding-inline: 25px;
+}
+.footer .footer-top .container .footer-form .btn:is(:hover, :focus) {
+  background-color: hsl(210deg, 26%, 7%);
+}
+.footer .footer-bottom {
+  padding-block: 20px;
+  text-align: center;
+}
+.footer .footer-bottom .container .copyright-link {
+  display: inline-block;
+}
+.footer .footer-bottom .container .copyright-link:is(:hover, :focus) {
+  text-decoration: underline;
+}
+
+.top-arrow {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: #FFC72C;
+  color: hsl(0deg, 0%, 100%);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px hsla(0deg, 0%, 0%, 0.2);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s ease;
+}
+.top-arrow.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+.top-arrow:is(:hover, :focus) {
+  background-color: hsl(210deg, 26%, 7%);
+}
+
 /*# sourceMappingURL=style.css.map */
