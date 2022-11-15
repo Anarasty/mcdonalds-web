@@ -958,6 +958,9 @@ main article .hero .container .hero-banner {
   transition: 0.25s ease;
 }
 
+.footer {
+  overflow: hidden;
+}
 .footer .footer-top {
   position: relative;
   padding-block: 120px;
@@ -973,6 +976,7 @@ main article .hero .container .hero-banner {
 .footer .footer-top .container .footer-brand .logo {
   color: hsl(210deg, 26%, 7%);
   font-size: 3.2rem;
+  font-weight: 600;
 }
 .footer .footer-top .container .footer-brand .footer-text {
   margin-block: 15px 25px;
@@ -1025,6 +1029,28 @@ main article .hero .container .hero-banner {
   border: 1px solid hsl(0deg, 0%, 93%);
   box-shadow: 0 1px 2px hsla(0deg, 0%, 0%, 0.2);
 }
+.footer .footer-top .container .footer-form .footer-list-title {
+  position: relative;
+  max-width: max-content;
+  color: hsl(210deg, 26%, 7%);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-block-end: 20px;
+}
+.footer .footer-top .container .footer-form .footer-list-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% + 15px);
+  background-color: #FFC72C;
+  width: 40px;
+  height: 4px;
+  border-inline-end: 5px solid #FFC72C;
+  box-shadow: inset -5px 0 0 hsl(0deg, 0%, 100%);
+}
 .footer .footer-top .container .footer-form .input-wrapper {
   display: grid;
   gap: 10px;
@@ -1048,6 +1074,10 @@ main article .hero .container .hero-banner {
   height: 100px;
   resize: vertical;
   margin-block-end: 10px;
+  color: hsl(0deg, 0%, 60%);
+  font-size: 1.4rem;
+  border: 1px solid hsl(0deg, 0%, 93%);
+  padding: 8px 12px;
 }
 .footer .footer-top .container .footer-form .btn {
   font-size: 1.5rem;

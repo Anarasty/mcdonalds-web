@@ -1,171 +1,201 @@
 .footer {
-    .footer-top {
-        position: relative;
-        padding-block: 120px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom;
-        border-block-end: 2px solid $independence_30;
+  overflow: hidden;
+  .footer-top {
+    position: relative;
+    padding-block: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    border-block-end: 2px solid $independence_30;
 
-        // &::after {
-        //     content: url('../images/delivery-boy.png');
-        //     position: absolute;
-        //     bottom: -11px;
-        //     left: -160px;
-        //     width: 160px;
-        //     animation: running-cycle 20s linear infinite;
-        // }
+    // &::after {
+    //     content: url('../images/delivery-boy.png');
+    //     position: absolute;
+    //     bottom: -11px;
+    //     left: -160px;
+    //     width: 160px;
+    //     animation: running-cycle 20s linear infinite;
+    // }
 
-        .container {
-            display: grid;
-            gap: 30px;
+    .container {
+      display: grid;
+      gap: 30px;
 
-            .footer-brand {
-                .logo {
-                    color: $rich-black-fogra-29;
-                    font-size: 3.2rem;
-                }
-                .footer-text {
-                    margin-block: 15px 25px;
-                }
-                .social-list {
-                    display: flex;
-                    gap: 5px;
-
-                    .social-link {
-                        background-color: $main-yellow;
-                        color: $white;
-                        font-size: 1.5rem;
-                        padding: 10px;
-                        transition: $transition-0_25;
-
-                        &:is(:hover, :focus) {
-                            background-color: $rich-black-fogra-29;
-                        }
-                    }
-                }
-            }
-
-            .footer-list {
-                .footer-list-title {
-                    position: relative;
-                    max-width: max-content;
-                    color: $rich-black-fogra-29;
-                    font-family: $font-rubik;
-                    font-size: $font-size-1_8rem;
-                    font-weight: $font-weight-600;
-                    letter-spacing: -1px;
-                    margin-block-end: 20px;
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        left: calc(100% + 15px);
-                        background-color: $main-yellow;
-                        width: 40px;
-                        height: 4px;
-                        border-inline-end: 5px solid $main-yellow;
-                        box-shadow: inset -5px 0 0 $white;
-                    }
-                }
-
-                & > li:not(:last-child) {
-                    margin-block-end: 15px;
-                }
-
-                address {
-                    max-width: 20ch;
-                }
-            }
-
-            .footer-form {
-                background-color: $white;
-                padding: 30px;
-                border: 1px solid $cultured;
-                box-shadow: $shadow-2;
-
-                .input-wrapper {
-                    display: grid;
-                    gap: 10px;
-                    margin-block-end: 10px;
-
-                    .input-field {
-                        color: $spanish-gray;
-                        font-size: $font-size-1_4rem;
-                        border: 1px solid $cultured;
-                        padding: 8px 12px;
-
-                        &::placeholder {
-                            color: $spanish-gray;
-                        }
-
-                        &::-webkit-calendar-picker-indicator {
-                            opacity: 0.5;
-                        }
-                    }
-                }
-
-                textarea.input-field {
-                    min-height: 50px;
-                    max-height: 150px;
-                    height: 100px;
-                    resize: vertical;
-                    margin-block-end: 10px;
-                }
-
-                .btn {
-                    font-size: 1.5rem;
-                    height: 40px;
-                    padding-inline: 25px;
-
-                    &:is(:hover, :focus) {
-                        background-color: $rich-black-fogra-29;
-                    }
-                }
-            }
+      .footer-brand {
+        .logo {
+          color: $rich-black-fogra-29;
+          font-size: 3.2rem;
+          font-weight: $font-weight-600;
         }
-    }
-    .footer-bottom {
-        padding-block: 20px;
-        text-align: center;
-        .container {
-            .copyright-link {
-                display: inline-block;
-
-                &:is(:hover, :focus) {
-                    text-decoration: underline;
-                }
-            }
+        .footer-text {
+          margin-block: 15px 25px;
         }
+        .social-list {
+          display: flex;
+          gap: 5px;
+
+          .social-link {
+            background-color: $main-yellow;
+            color: $white;
+            font-size: 1.5rem;
+            padding: 10px;
+            transition: $transition-0_25;
+
+            &:is(:hover, :focus) {
+              background-color: $rich-black-fogra-29;
+            }
+          }
+        }
+      }
+
+      .footer-list {
+        .footer-list-title {
+          position: relative;
+          max-width: max-content;
+          color: $rich-black-fogra-29;
+          font-family: $font-rubik;
+          font-size: $font-size-1_8rem;
+          font-weight: $font-weight-600;
+          letter-spacing: -1px;
+          margin-block-end: 20px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: calc(100% + 15px);
+            background-color: $main-yellow;
+            width: 40px;
+            height: 4px;
+            border-inline-end: 5px solid $main-yellow;
+            box-shadow: inset -5px 0 0 $white;
+          }
+        }
+
+        & > li:not(:last-child) {
+          margin-block-end: 15px;
+        }
+
+        address {
+          max-width: 20ch;
+        }
+      }
+
+      .footer-form {
+        background-color: $white;
+        padding: 30px;
+        border: 1px solid $cultured;
+        box-shadow: $shadow-2;
+        .footer-list-title {
+          position: relative;
+          max-width: max-content;
+          color: $rich-black-fogra-29;
+          font-family: $font-rubik;
+          font-size: $font-size-1_8rem;
+          font-weight: $font-weight-600;
+          letter-spacing: -1px;
+          margin-block-end: 20px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: calc(100% + 15px);
+            background-color: $main-yellow;
+            width: 40px;
+            height: 4px;
+            border-inline-end: 5px solid $main-yellow;
+            box-shadow: inset -5px 0 0 $white;
+          }
+        }
+
+        .input-wrapper {
+          display: grid;
+          gap: 10px;
+          margin-block-end: 10px;
+
+          .input-field {
+            color: $spanish-gray;
+            font-size: $font-size-1_4rem;
+            border: 1px solid $cultured;
+            padding: 8px 12px;
+
+            &::placeholder {
+              color: $spanish-gray;
+            }
+
+            &::-webkit-calendar-picker-indicator {
+              opacity: 0.5;
+            }
+          }
+        }
+
+        textarea.input-field {
+          min-height: 50px;
+          max-height: 150px;
+          height: 100px;
+          resize: vertical;
+          margin-block-end: 10px;
+
+          color: $spanish-gray;
+          font-size: $font-size-1_4rem;
+          border: 1px solid $cultured;
+          padding: 8px 12px;
+        }
+
+        .btn {
+          font-size: 1.5rem;
+          height: 40px;
+          padding-inline: 25px;
+
+          &:is(:hover, :focus) {
+            background-color: $rich-black-fogra-29;
+          }
+        }
+      }
     }
+  }
+  .footer-bottom {
+    padding-block: 20px;
+    text-align: center;
+    .container {
+      .copyright-link {
+        display: inline-block;
+
+        &:is(:hover, :focus) {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 // ARROW TOP
 .top-arrow {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    background-color: $main-yellow;
-    color: $white;
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: $shadow-1;
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-    transition: $transition-0_25;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: $main-yellow;
+  color: $white;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: $shadow-1;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition-0_25;
 
-    &.active {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(-10px);
-    }
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+  }
 
-    &:is(:hover, :focus) {
-        background-color: $rich-black-fogra-29;
-    }
+  &:is(:hover, :focus) {
+    background-color: $rich-black-fogra-29;
+  }
 }
 
 // @keyframes running-cycle {
